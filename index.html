@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Form 📋</title>
+    <link rel="icon" href="./images/contact-form.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>STUDENT FORM</h1>
+    <form id="studentForm" onsubmit="save(event)">
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter your Name"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>Age</th>
+          <td>
+            <input
+              id="age"
+              type="number"
+              placeholder="Enter your Age"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>Gender</th>
+          <td>
+            <input type="radio" name="gender" value="Male" />Male
+            <input type="radio" name="gender" value="Female" />Female
+          </td>
+        </tr>
+        <tr>
+          <th>Course</th>
+          <td>
+            <label for="Course">
+              <select name="lang" id="programming" required>
+                <option disabled selected value>-- Select a Course --</option>
+                <option>C++</option>
+                <option>Java</option>
+                <option>Javascript</option>
+                <option>Python</option>
+              </select>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th>E-mail</th>
+          <td>
+            <input
+              id="mailid"
+              type="email"
+              placeholder="Enter your E-mail"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <button
+              class="save"
+              style="width: 100%; padding: 10px"
+              onclick="save()"
+            >
+              Save
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <br />
+    <table id="output">
+      <tr>
+        <th>NAME</th>
+        <th>AGE</th>
+        <th>COURSE</th>
+        <th>GENDER</th>
+        <th>EMAIL</th>
+        <th>ACTION</th>
+      </tr>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>

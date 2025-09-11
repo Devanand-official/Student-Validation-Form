@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+* {
+  justify-content: center;
+  text-align: center;
+}
+table,
+th,
+td {
+  /* justify-content: center;
+            text-align: center; */
+  background-color: white;
+  border: 1px solid black;
+  padding: 15px;
+  margin: 5px;
+}
+table {
+  background-color: white;
+  border: 1px solid black;
+  padding: 15px;
+  margin: 10px auto; /* centers the table */
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px;
+  color: rgb(255, 255, 255);
+  background-color: red;
+  cursor: pointer;
+}
+button.save {
+  color: rgb(0, 0, 0);
+  background-color: greenyellow;
+}
+input,
+select {
+  padding: 5px;
+}
+button:hover {
+  background-color: rgb(202, 33, 33);
+}
+button.save:hover {
+  background-color: rgb(148, 221, 39);
+}
